@@ -131,4 +131,4 @@ RUN sed -i -e"s/5050/5000/" ~/.rtorrent.rc
 WORKDIR /root
 ADD  ./run.sh /root/run.sh
 RUN chmod +x ./run.sh 
-CMD         ./run.sh 
+CMD        ./run.sh && /bin/bash
